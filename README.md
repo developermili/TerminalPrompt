@@ -2,6 +2,7 @@
 This is the .bashrc and .bash_profile I use to personalize my Terminal.
 
 > What is the difference between .bash_profile and .bashrc?
+>
 > https://apple.stackexchange.com/questions/51036/what-is-the-difference-between-bash-profile-and-bashrc
 
 .bash_profile is executed for login shells, while .bashrc is executed for interactive non-login shells.
