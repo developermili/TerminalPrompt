@@ -1,4 +1,11 @@
 #Prompt
+# \d – Current date
+# \t – Current time
+# \h – Host name
+# \# – Command number
+# \u – User name
+# \W – Current working directory (i.e: Desktop/)
+# \w – Current working directory, full path (i.e: /Users/Admin/Desktop)
 function parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
 }
