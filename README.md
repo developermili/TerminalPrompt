@@ -17,3 +17,9 @@ if [ -f ~/.bashrc ]; then
   source ~/.bashrc
 fi
 ```
+
+__________________
+
+> The hostname utility prints the name of the current host.  The super-user
+     can set the hostname by supplying an argument.  To keep the hostname
+     between reboots, run `scutil --set HostName name-of-host'.
