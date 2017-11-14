@@ -23,3 +23,10 @@ __________________
 > The hostname utility prints the name of the current host.  The super-user
      can set the hostname by supplying an argument.  To keep the hostname
      between reboots, run `scutil --set HostName name-of-host'.
+__________________
+
+> Git setting
+```
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+```
