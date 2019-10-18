@@ -23,9 +23,10 @@ function parse_git_branch() {
 }
 
 PROMPT='
-%F{magenta}%n@%m: %d%f
+%F{magenta}%n@%m:%f
 [%D{%H:%M:%S}] ▶ '
 PROMPT2='▶'
+RPROMPT='%F{yellow}[ %~ ]%f'
 function prompt() {
     if [ "$(parse_git_branch)" != '' ]; then
         PROMPT='▶ %F{magenta}%n@%m: %d%f '
