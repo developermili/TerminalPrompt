@@ -55,6 +55,9 @@ LS_COLORS='no=00:fi=00:di=00:ow=34;40:ln=35:pi=30;44:so=35;44:do=35;44:bd=33;44:
 
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
+# LSCOLORS=bxfxcxdxbxegedabagacad
+# export CLICOLOR=1
+
 #Display colors, type indicators, and unit suffixes
 #-G: Enable colorized output
 #-F: Append indicator (one of */=@|) to entries
