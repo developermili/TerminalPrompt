@@ -61,7 +61,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 #-F: Append indicator (one of */=@|) to entries
 #-h: Print sizes in human readable format (e.g., 1K 234M 2G)
 # brew install coreutils
-alias ls='gls --color -Fh'
+alias ls='gls --color -Fh --quoting-style=literal'
 
-#Textedit
-alias textedit='open -a TextEdit'
+#AndroidStudio
+export PATH="~/Library/Android/sdk/platform-tools":$PATH
