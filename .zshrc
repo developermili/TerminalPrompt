@@ -28,12 +28,15 @@
 # ✔✓☑.✘✖✗
 # http://zsh.sourceforge.net/Doc/Release/Prompt-Expansion.html#Conditional-Substrings-in-Prompts
 PROMPT='
-%B%F{magenta}%n@%m:%f%b
+%B%F{magenta}%n@%m: %d%f%b
 %(?.%F{green}✔.%F{red}✗) %B%F{250}[%*]%f%b ▶ '
 PROMPT2='▶'
 RPROMPT='%F{yellow}[ %~ ]%f'
 
 # Enable tab-completion library for Git.
+# zsh compinit: insecure directories, run compaudit for list.
+# Ignore insecure directories and continue [y] or abort compinit [n]? 
+# compaudit | xargs chmod g-w
 autoload -Uz compinit && compinit
 # Get information from version control systems,
 autoload -Uz vcs_info
@@ -57,6 +60,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 #-G or --color: Enable colorized output
 #-F: Append indicator (one of */=@|) to entries
 #-h: Print sizes in human readable format (e.g., 1K 234M 2G)
+# brew install coreutils
 alias ls='gls --color -Fh'
 
 #Textedit
