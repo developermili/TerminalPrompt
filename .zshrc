@@ -52,8 +52,7 @@ precmd_functions+=(precmd_vcs_info)
 setopt prompt_subst
 zstyle ':vcs_info:git:*' formats '%b'
 
-LS_COLORS='no=00;37:fi=00:di=00;93:ln=04;36:pi=40;33:so=01;35:bd=40;33;01:'
-export LS_COLORS
+export LS_COLORS='no=00;37:fi=00:di=00;93:ln=04;36:pi=40;33:so=01;35:bd=40;33;01:'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 #Display colors, type indicators, and unit suffixes
@@ -64,4 +63,14 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 alias ls='gls --color -Fh --quoting-style=literal'
 
 #AndroidStudio
-export PATH="~/Library/Android/sdk/platform-tools":$PATH
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+# export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+# export PATH=$PATH:$ANDROID_HOME/emulator
+# export PATH=$PATH:$ANDROID_HOME/tools
+# export PATH=$PATH:$ANDROID_HOME/tools/bin
+# export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
+# alias adb='/Users/mili/Library/Android/sdk/platform-tools/platform-tools/adb'
+export PATH="$PATH:$ANDROID_HOME/platform-tools/platform-tools"
+
+#brew
+alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
