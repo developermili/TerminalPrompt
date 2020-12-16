@@ -62,15 +62,5 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # brew install coreutils
 alias ls='gls --color -Fh --quoting-style=literal'
 
-#AndroidStudio
-export ANDROID_HOME="$HOME/Library/Android/sdk"
-# export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
-# export PATH=$PATH:$ANDROID_HOME/emulator
-# export PATH=$PATH:$ANDROID_HOME/tools
-# export PATH=$PATH:$ANDROID_HOME/tools/bin
-# export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
-# alias adb='/Users/mili/Library/Android/sdk/platform-tools/platform-tools/adb'
-export PATH="$PATH:$ANDROID_HOME/platform-tools/platform-tools"
-
 #brew
 alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
