@@ -64,3 +64,4 @@ alias ls='gls --color -Fh --quoting-style=literal'
 
 #brew
 alias brewski='brew update && brew upgrade && brew cleanup; brew doctor'
+
